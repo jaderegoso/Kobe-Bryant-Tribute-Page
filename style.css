@@ -1,0 +1,130 @@
+body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSjhEjnAGL3fqs5AHFQKqK_mYbT0Nj49Gpj41E4LcWSHLQ15nWC&usqp=CAU");
+
+  /* Set a specific height */
+  height: 50%;
+
+
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+    
+}
+
+
+
+/* Section 2*/
+/* Quote */
+blockquote {
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Section 3 */
+
+
+/*  SECTIONS  */
+.section {
+clear: both;
+padding: 0px;
+margin: 0px;
+} 
+
+/*  COLUMN SETUP  */
+.col {
+display: block;
+float:left;
+margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+
+/*  GRID OF THREE           ============================================================================= */
+
+
+.span_3_of_3 {
+width: 100%; 
+text-align: center;
+}
+
+.span_2_of_3 {
+width: 66.1%;
+text-align: center;
+}
+
+.span_1_of_3 {
+width: 32.2%; 
+text-align: center;
+}
+
+
+
+
+
+
+
+
+ /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+ @media only screen and (max-width: 480px) {
+.span_3_of_3 {
+    width: 100%; 
+    text-align: center;
+}
+.span_2_of_3 {
+    width: 100%;
+    text-align: center;
+}
+.span_1_of_3 {
+    width: 100%;
+    text-align: center;
+}
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
